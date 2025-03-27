@@ -37,6 +37,12 @@
       font-size: 24px;
     }
   }
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .group:hover .text-outline-hover {
+    -webkit-text-stroke: 1px #FFCA28;
+  }
 }:root {
   --screen-sm: 640px;
   --screen-md: 768px;
@@ -49,7 +55,7 @@
   --color: {
     primary: "#1c1c22",
     accent: {
-      DEFAULT: "#00ff99",
+      DEFAULT: "#FFCA28",
       hover: "#00e187"
     }
   }}
