@@ -6,7 +6,13 @@ import {
   FaJs,
   FaReact,
   FaFigma,
-  FaNodeJs
+  FaNodeJs,
+  FaPython,
+  FaUnity,
+  FaMobile,
+  FaGit,
+  FaGithub,
+  FaJava
 } from "react-icons/fa"
 
 import { SiTypescript, SiTailwindcss } from "react-icons/si"
@@ -18,7 +24,7 @@ import { motion } from "framer-motion"
 // about data
 const about = {
   title: "About Me",
-  description: "I am a software engineer with a passion for creating clean and efficient web applications. I have experience working with various programming languages and frameworks.",
+  description: "I graduated with a degree in Computer Science and aspire to become a skilled Programmer, System Analyst (SA), or Business Analyst (BA). I am passionate about learning new technologies and am committed to continuously improving and contributing positively through my work.",
   info: [
     {
       fieldName: "Name",
@@ -51,22 +57,12 @@ const about = {
 const experience = {
   icon: '/assets/resume/',
   title: "My Experience",
-  description: "I have experience working with various programming languages and frameworks.",
+  description: "I only have experience from my internship, but I would like to learn more to improve my abilities.",
   item: [
     {
-      company: "Technologetic Solutions",
-      position: "Software Engineer",
-      duration: "2019 - Present",
-    },
-    {
-      company: "Apple Inc.",
-      position: "Software Engineer",
-      duration: "2019 - Present",
-    },
-    {
-      company: "Microsoft",
-      position: "Software Engineer",
-      duration: "2019 - Present",
+      company: "Internship at National Electronics and Computer Technology Center : NECTEC",
+      position: "Research Assistant",
+      duration: "2024 - 2025",
     },
   ]
 }
@@ -75,17 +71,27 @@ const experience = {
 const education = {
   icon: '/assets/resume/',
   title: "My Education",
-  description: "I have experience working with various programming languages and frameworks.",
+  description: "I have experience studying at Kasetsart University, Computer Science major, and try to learn in other subjects, whether it is online or by attending lectures.",
   item: [
     {
-      institution: "Chulalongkorn University",
+      institution: "Kasetsart  University",
       degree: "Bachelor of Science in Computer Science",
-      duration: "201"
+      duration: "2021 - 2025"
     },
     {
       institution: "Online Course",
-      degree: "awddawdawd",
-      duration: "201"
+      degree: "Ethics in Humans",
+      duration: "2024"
+    },
+    {
+      institution: "AI for Thai",
+      degree: "Participate in listening",
+      duration: "2023"
+    },
+    {
+      institution: "Online Course",
+      degree: "Storytelling",
+      duration: "2023"
     },
   ]
 }
@@ -126,6 +132,30 @@ const skills = {
     {
       icon: <FaFigma />,
       name: "Figma"
+    },
+    {
+      icon: <FaPython />,
+      name: "Python"
+    },
+    {
+      icon: <FaUnity />,
+      name: "Unity"
+    },
+    {
+      icon: <FaMobile />,
+      name: "Flutter"
+    },
+    {
+      icon: <FaGit />,
+      name: "Git"
+    },
+    {
+      icon: <FaGithub />,
+      name: "Github"
+    },
+    {
+      icon: <FaJava />,
+      name: "Java"
     },
   ]
 }
@@ -237,14 +267,17 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">{about.info.map((item, index) => {
-                  return (
-                    <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
-                      <span className="text-white/60">{item.fieldName}</span>
-                      <span className="text-xl">{item.fieldValue}</span>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-8 max-w-[700px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center gap-2"
+                    >
+                      <span className="text-white/60 text-base">{item.fieldName}</span>
+                      <span className="text-white text-base">{item.fieldValue}</span>
                     </li>
-                  )
-                })}</ul>
+                  ))}
+                </ul>
               </div>
             </TabsContent>
           </div>

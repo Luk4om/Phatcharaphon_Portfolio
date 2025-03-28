@@ -1,7 +1,7 @@
 "use client"
 
-import Button from "@/components/ui/Button" 
-import Input from "@/components/ui/Input"   
+import Button from "@/components/ui/Button"
+import Input from "@/components/ui/Input"
 import TextArea from "@/components/ui/Textarea"
 
 import {
@@ -51,7 +51,7 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-amber-400">Let's Work Together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nunc, quis aliquam nisl nisl sit amet nisl.
+                Sample form for submitting details.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
