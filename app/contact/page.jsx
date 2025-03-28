@@ -6,13 +6,11 @@ import TextArea from "@/components/ui/Textarea"
 
 import {
   Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
   SelectTrigger,
+  SelectContent,
+  SelectItem,
   SelectValue
-} from "@/components/ui/select"
+} from "@/components/ui/select";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa"
 import { motion } from "framer-motion"
