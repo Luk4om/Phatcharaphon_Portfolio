@@ -173,8 +173,12 @@ const Resume = () => {
       <div className="container mx-auto">
         <Tabs
           defaultValue="experience"
-          className="flex flex-col xl:flex-row gap-[60px]">
+          className="flex flex-col xl:flex-row gap-[60px] justify-center items-center">
           <TabsList className="flex flex-col w-full max-w-[380px] mx:auto xl:mx-0 gap-6">
+            <h3 className="text-4xl font-bold">Summary</h3>
+            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+              Summary of all Experience, Education, Skills and About Me.
+            </p>
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -235,31 +239,33 @@ const Resume = () => {
             </TabsContent>
             {/* skills */}
             <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px] ">
+              <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
-                  {skills.skillslist.map((skill, index) => {
-                    return (
-                      <li key={index} className="flex items-center gap-4">
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-amber-400 transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    )
-                  })}
-                </ul>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillslist.map((skill, index) => {
+                      return (
+                        <li key={index} className="flex items-center gap-4">
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-6xl group-hover:text-amber-400 transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
             {/* about */}
@@ -271,7 +277,7 @@ const Resume = () => {
                   {about.info.map((item, index) => (
                     <li
                       key={index}
-                      className="flex items-center gap-2"
+                      className="flex items-center gap-2 border border-amber-400/60 rounded-lg p-3 bg-[#232329]"
                     >
                       <span className="text-white/60 text-base">{item.fieldName}</span>
                       <span className="text-white text-base">{item.fieldValue}</span>
