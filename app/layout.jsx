@@ -9,7 +9,7 @@ import StairTransition from "@/components/StairTransition";
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variables: '--font-jetbrains-mono'
+  variable: '--font-jetbrains-mono'
 });
 
 // const geistSans = Geist({
@@ -30,9 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${jetbrainsMono.variable} ${jetbrainsMono.variable} antialiased`}
-      >
+      <body className={`${jetbrainsMono.variable} antialiased`}>
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>

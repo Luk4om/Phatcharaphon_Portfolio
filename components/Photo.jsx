@@ -21,7 +21,7 @@ const Photo = () => {
           }}>
           <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
             <Image
-              src="/assets/me_photo.png"
+              src="/assets/me_photo_bg.png"
               priority
               quality={100}
               width={498}

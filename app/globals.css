@@ -49,7 +49,7 @@
   --screen-lg: 960px;
   --screen-xl: 1200px;
 
-  --font-primary: "JetBrains Mono", monospace;
+  --font-primary: var(--font-jetbrains-mono), monospace;
   --bg-primary: #1c1c22;
 
   --color: {
