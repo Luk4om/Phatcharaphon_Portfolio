@@ -7,31 +7,24 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Flutter Recipe",
     description:
-      "I build websites that are fast, responsive, and user-friendly. I use the latest technologies to create websites that are optimized for search engines and mobile devices.",
-    href: "/web-development", // Provide a valid href or leave as '' if no link
+      "I build an recipe application using Flutter with API calls.",
+    href: "https://github.com/Luk4om/Recipe_Flutter",
   },
   {
     num: "02",
-    title: "UX/UI Design",
+    title: "Website Recipe",
     description:
-      "I build websites that are fast, responsive, and user-friendly. I use the latest technologies to create websites that are optimized for search engines and mobile devices.",
-    href: "/ux-ui-design",
+      "I build a recipe website using NextJS with API calls.",
+    href: "https://github.com/Luk4om/Recipe_NextJS",
   },
   {
     num: "03",
-    title: "Machine Learning",
+    title: "NextJS + Framer Motion Portfolio",
     description:
       "I build websites that are fast, responsive, and user-friendly. I use the latest technologies to create websites that are optimized for search engines and mobile devices.",
-    href: "/machine-learning", // Added href
-  },
-  {
-    num: "04",
-    title: "Mobile App Development",
-    description:
-      "I build websites that are fast, responsive, and user-friendly. I use the latest technologies to create websites that are optimized for search engines and mobile devices.",
-    href: "/mobile-app-development",
+    href: "https://phatcharaphon-portfolio.vercel.app/?fbclid=IwZXh0bgNhZW0CMTAAAR5UArMYuMLHFKvEk9K10pNqNYzWQ4IhrUdgeVe7_oGoCJMlvpWuYNXisoVS6Q_aem_IYOjnJEdyuoxR5KEtKfpaQ",
   },
 ];
 

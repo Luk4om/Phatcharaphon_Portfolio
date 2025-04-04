@@ -17,36 +17,36 @@ import WorkSlideBtns from "@/components/ui/WorkSlideBtns"
 const projects = [
   {
     num: '01',
-    category: 'Projects',
+    category: 'Portfolio Website',
     title: 'Project 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nunc, quis aliquam nisl nisl sit amet nisl.',
-    stack: [{ name: 'React', }, { name: 'Next.js', }, { name: 'TypeScript', },
+    description: 'Portfolio Website | Responsive, TailwindCSS, Framer Motion',
+    stack: [{ name: 'Next.js', }, { name: 'JavaScript', }, { name: 'Framer Motion', },
     ],
-    image: '/assets/work/',
+    image: '/assets/work/portfolio.png',
     live: '',
-    github: ''
+    github: 'https://github.com/Luk4om/Phatcharaphon_Portfolio'
   },
   {
     num: '02',
-    category: 'full',
+    category: 'Recipe App',
     title: 'Project 2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nunc, quis aliquam nisl nisl sit amet nisl.',
-    stack: [{ name: 'React', }, { name: 'Next.js', }, { name: 'TypeScript', },
+    description: 'Recipe App | Flutter, Dart',
+    stack: [{ name: 'Flutter', }, { name: 'Dart', },
     ],
-    image: '/assets/work/',
+    image: '/assets/work/recipeapp.png',
     live: '',
-    github: ''
+    github: 'https://github.com/Luk4om/Recipe_Flutter'
   },
   {
     num: '03',
-    category: 'frontend',
+    category: 'Recipe Website',
     title: 'Project 3',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nisl aliquet nunc, quis aliquam nisl nisl sit amet nisl.',
+    description: 'Recipe Website | React, Next.js, TypeScript',
     stack: [{ name: 'React', }, { name: 'Next.js', }, { name: 'TypeScript', },
     ],
-    image: '/assets/work/',
+    image: '/assets/work/recipeweb.png',
     live: '',
-    github: ''
+    github: 'https://github.com/Luk4om/Recipe_NextJS'
   },
 ]
 

@@ -51,22 +51,12 @@ const about = {
 const experience = {
   icon: '/assets/resume/',
   title: "My Experience",
-  description: "I have experience working with various programming languages and frameworks.",
+  description: "I have experience working with various programming.",
   item: [
     {
-      company: "Technologetic Solutions",
-      position: "Software Engineer",
-      duration: "2019 - Present",
-    },
-    {
-      company: "Apple Inc.",
-      position: "Software Engineer",
-      duration: "2019 - Present",
-    },
-    {
-      company: "Microsoft",
-      position: "Software Engineer",
-      duration: "2019 - Present",
+      company: "National Electronics and Computer Technology Center : NECTEC",
+      position: "Research Assistant Intern",
+      duration: "2024 - 2025",
     },
   ]
 }
@@ -75,17 +65,12 @@ const experience = {
 const education = {
   icon: '/assets/resume/',
   title: "My Education",
-  description: "I have experience working with various programming languages and frameworks.",
+  description: "I have had the experience of learning from many sources.",
   item: [
     {
       institution: "Chulalongkorn University",
       degree: "Bachelor of Science in Computer Science",
-      duration: "201"
-    },
-    {
-      institution: "Online Course",
-      degree: "awddawdawd",
-      duration: "201"
+      duration: "2021 – 2025"
     },
   ]
 }
@@ -93,7 +78,7 @@ const education = {
 // skills data
 const skills = {
   title: "My Skills",
-  description: "I have experience working with various programming languages and frameworks.",
+  description: "I have experience working with various programming.",
   skillslist: [
     {
       icon: <FaHtml5 />,
