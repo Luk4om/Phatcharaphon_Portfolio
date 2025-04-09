@@ -6,7 +6,7 @@ const social = [
     { icon: <FaGithub />, path: "https://github.com/Luk4om" },
     { icon: <FaFacebook />, path: "https://www.facebook.com/HallsXII" },
     { icon: <FaInstagram />, path: "" },
-    { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/halls-xii-55544335b/" },
+    { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" },
 ]
 const Socials = ({ containerStyles, iconStyles }) => {
     return (
