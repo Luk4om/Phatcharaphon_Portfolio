@@ -25,7 +25,14 @@ const services = [
     title: "NextJS + Framer Motion Portfolio",
     description:
       "I build websites that are fast, responsive, and user-friendly. I use the latest technologies to create websites that are optimized for search engines and mobile devices.",
-    href: "https://phatcharaphon-portfolio.vercel.app/?fbclid=IwZXh0bgNhZW0CMTAAAR5UArMYuMLHFKvEk9K10pNqNYzWQ4IhrUdgeVe7_oGoCJMlvpWuYNXisoVS6Q_aem_IYOjnJEdyuoxR5KEtKfpaQ",
+    href: "https://phatcharaphon-portfolio.vercel.app/",
+  },
+  {
+    num: "04",
+    title: "Next.js, DaisyUI, Rust To-Do List",
+    description:
+      "I created this website to practice using Rust in the backend by doing get, post, put and delete.",
+    href: "https://fullstack-todolist-rust.vercel.app/",
   },
 ];
 

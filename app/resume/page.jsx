@@ -12,8 +12,15 @@ import {
   FaMobile,
   FaGit,
   FaGithub,
-  FaJava
+  FaJava,
+  FaRust,
 } from "react-icons/fa"
+import {
+  SiNextdotjs,
+} from "react-icons/si";
+import { 
+  TbBrandSolidjs,
+} from "react-icons/tb";
 
 import { SiTypescript, SiTailwindcss } from "react-icons/si"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/Tabs"
@@ -59,6 +66,11 @@ const experience = {
   title: "My Experience",
   description: "I only have experience from my internship, but I would like to learn more to improve my abilities.",
   item: [
+    {
+      company: "NCR at National Electronics and Computer Technology Center : NECTEC",
+      position: "Research Assistant",
+      duration: "2025 - 2026",
+    },
     {
       company: "Internship at National Electronics and Computer Technology Center : NECTEC",
       position: "Research Assistant Intern",
@@ -122,6 +134,10 @@ const skills = {
       name: "React"
     },
     {
+      icon: <SiNextdotjs />,
+      name: "Next.js"
+    },
+    {
       icon: <SiTailwindcss />,
       name: "Tailwind CSS"
     },
@@ -156,6 +172,14 @@ const skills = {
     {
       icon: <FaJava />,
       name: "Java"
+    },
+    {
+      icon: <FaRust />,
+      name: "Rust"
+    },
+    {
+      icon: <TbBrandSolidjs />,
+      name: "Solidjs"
     },
   ]
 }

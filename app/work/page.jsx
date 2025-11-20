@@ -23,7 +23,7 @@ const projects = [
     stack: [{ name: 'Next.js', }, { name: 'JavaScript', }, { name: 'Framer Motion', },
     ],
     image: '/assets/work/portfolio.png',
-    live: '',
+    live: 'https://phatcharaphon-portfolio.vercel.app/',
     github: 'https://github.com/Luk4om/Phatcharaphon_Portfolio'
   },
   {
@@ -47,6 +47,17 @@ const projects = [
     image: '/assets/work/recipeweb.png',
     live: '',
     github: 'https://github.com/Luk4om/Recipe_NextJS'
+  },
+  {
+    num: '04',
+    category: 'To-Do List Website',
+    title: 'Project 4',
+    description: 'To-Do List Website |  Next.js, DaisyUI, Rust',
+    stack: [{ name: 'Next.js', }, { name: 'DaisyUI', }, { name: 'Rust', },
+    ],
+    image: '/assets/work/todolist_rust.png',
+    live: 'https://fullstack-todolist-rust.vercel.app/',
+    github: 'https://github.com/Luk4om/Fullstack_Todolist_Rust.git'
   },
 ]
 
